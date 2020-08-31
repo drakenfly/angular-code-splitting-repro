@@ -1,11 +1,3 @@
-# How this project was set up
-* `ng new code-splitting-repro`
-* `cd code-splitting-repro`
-* `npm run ng -- g library test1`
-* `npm run ng -- g library test2`
-* `npm run ng -- g library test3`
-* Source code modifications
-
 # Problem
 How to reproduce
 * `rm -rf dist/*`
@@ -20,6 +12,16 @@ How to reproduce
 
 ---
 
-* (`Remove-Item dist/ -Include *ivy_ngcc* -Recurse` to start clear after fromdist config was run once)
 * `npm run start -- --configuration=fromsource`: does not work
 * `npm run start -- --configuration=fromdist`: works as expected
+
+After that, fromsource builds will run too (because Ivy already did it's job), but I'm not sure if it would be linked correctly
+
+
+# How this project was set up
+* `ng new code-splitting-repro`
+* `cd code-splitting-repro`
+* `npm run ng -- g library test1`
+* `npm run ng -- g library test2`
+* `npm run ng -- g library test3`
+* Source code modifications

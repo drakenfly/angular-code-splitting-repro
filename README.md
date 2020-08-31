@@ -8,10 +8,11 @@
 
 # Problem
 How to reproduce
+* `rm -rf dist/*`
 * `npm i`
-* `npm run build -- --project=test1`
-* `npm run build -- --project=test2`
-* `npm run build -- --project=test3`
+* `npm run build -- --project=test1 --prod`
+* `npm run build -- --project=test2 --prod`
+* `npm run build -- --project=test3 --prod`
 * `cd dist/test3`
 * `npm link`
 * `cd ../..`
@@ -19,5 +20,6 @@ How to reproduce
 
 ---
 
+* (`Remove-Item dist/ -Include *ivy_ngcc* -Recurse` to start clear after fromdist config was run once)
+* `npm run start -- --configuration=fromsource`: does not work
 * `npm run start -- --configuration=fromdist`: works as expected
-* `npm run start -- --configuration=fromsource`: problems

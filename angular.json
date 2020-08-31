@@ -33,6 +33,15 @@
             "scripts": []
           },
           "configurations": {
+            "fromsource": {
+              "tsConfig": "tsconfig.app.fromsource.json"
+            },
+            "fromdist": {
+              "tsConfig": "tsconfig.app.fromdist.json"
+            },
+            "error": {
+              "tsConfig": "tsconfig.app.error.json"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -69,6 +78,15 @@
             "browserTarget": "code-splitting-repro:build"
           },
           "configurations": {
+            "fromsource": {
+              "browserTarget": "code-splitting-repro:build:fromsource"
+            },
+            "fromdist": {
+              "browserTarget": "code-splitting-repro:build:fromdist"
+            },
+            "error": {
+              "browserTarget": "code-splitting-repro:build:error"
+            },
             "production": {
               "browserTarget": "code-splitting-repro:build:production"
             }

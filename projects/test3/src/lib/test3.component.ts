@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
     <p>
       test3 works!
     </p>
+
+    <div>
+      From test2-lib:
+      <lib-test2></lib-test2>
+    </div>
   `,
   styles: [
   ]
